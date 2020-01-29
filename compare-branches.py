@@ -25,11 +25,11 @@ def git_log():
 def git_checkout(branch_name):
     Popen('git checkout "%s"' % branch_name, shell=True, stdout=PIPE)
 
-def commits_are_same(commit_one, commit_two):
-    same_email = commit_one['author_email'] == commit_two['author_email']
-    same_date = commit_one['date'] == commit_two['date']
-    same_message = commit_one['message'] == commit_two['message']
-    return same_email and same_date and same_message
+#def commits_are_same(commit_one, commit_two):
+   # same_email = commit_one['author_email'] == commit_two['author_email']
+   # same_date = commit_one['date'] == commit_two['date']
+   #same_message = commit_one['message'] == commit_two['message']
+   #return same_email and same_date and same_message
 
 def development_has_changes_from_master():
     # we need to add sleeps in this method
